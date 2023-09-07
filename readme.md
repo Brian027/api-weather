@@ -40,7 +40,7 @@ Response:
 
 ## Author
 
-- **Jorge Chávez** - [jorgechavezrnd]()
+- **Coupama Brian** - _Initial work_ - [bc_548]()
 
 ## License
 
