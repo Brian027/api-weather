@@ -2,16 +2,16 @@ const express = require('express');
 const { setPosts, getPosts, editPost, deletePost, likePost, dislikePost } = require('../controllers/post.controller');
 const router = express.Router();
 
-router.get("/", getPosts);
+router.get("/apiWeather", getPosts);
 
-router.post("/", setPosts);
+router.post("/apiWeather", setPosts);
 
-router.put("/:id", editPost);
+router.put("/apiWeather/:id", editPost);
 
-router.delete("/:id", deletePost);
+router.delete("/apiWeather/:id", deletePost);
 
-router.patch("/like-post/:id", likePost);
+router.patch("/apiWeather/like-post/:id", likePost);
 
-router.patch("/dislike-post/:id", dislikePost);
+router.patch("/apiWeather/dislike-post/:id", dislikePost);
 
 module.exports = router;

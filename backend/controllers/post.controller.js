@@ -6,13 +6,17 @@ module.exports.getPosts = async (req, res) => {
 };
 
 module.exports.setPosts = async (req, res) => {
-    if(!req.body.message){
-        res.status(400).json({message: "Le message est obligatoire"});
-    } 
+    if(!req.body.city || !req.body.country || !req.body.minTemperature || !req.body.maxTemperature || !req.body.windSpeed){
+        res.status(400).json({message: "Les champs ne sont pas tous remplis !"});
+    }
 
     const post = await PostModel.create({
-        message: req.body.message,
-        author: req.body.author
+        date: req.body.date,
+        city: req.body.city,
+        country: req.body.country,
+        minTemperature: req.body.minTemperature,
+        maxTemperature: req.body.maxTemperature,
+        windSpeed: req.body.windSpeed,
     });
 
     res.status(200).json(post);

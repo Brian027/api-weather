@@ -1,19 +1,40 @@
 const mongoose = require('mongoose');
 
 const postShema = mongoose.Schema(
-    {
-        message: {
-            type: String,
-            required: true,
-        },
-        author: {
-            type: String,
-            required: true,
-        },
-        likers: {
-            type: [String],
+    data = [
+        {
+            // Date
+            date: {
+                type: Date,
+                default: new Date()
+            },
+            // City
+            city: {
+                type: String,
+                required: true
+            },
+            // Country
+            country: {
+                type: String,
+                required: true
+            },
+            // Min Temperature
+            minTemperature: {
+                type: Number,
+                required: true
+            },
+            // Max Temperature
+            maxTemperature: {
+                type: Number,
+                required: true
+            },
+            // Wind Speed
+            windSpeed: {
+                type: Number,
+                required: true
+            },
         }
-    },
+    ],
     {
         timestamps: true
     }
