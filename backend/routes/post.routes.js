@@ -10,8 +10,8 @@ router.put("/apiWeather/:id", editPost);
 
 router.delete("/apiWeather/:id", deletePost);
 
-router.patch("/apiWeather/like-post/:id", likePost);
+// router.patch("/apiWeather/like-post/:id", likePost);
 
-router.patch("/apiWeather/dislike-post/:id", dislikePost);
+// router.patch("/apiWeather/dislike-post/:id", dislikePost);
 
 module.exports = router;
