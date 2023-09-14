@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const postShema = mongoose.Schema(
-    data = [
+    weather = [
         {
             // Date
             date: {
@@ -18,6 +18,11 @@ const postShema = mongoose.Schema(
                 type: String,
                 required: true
             },
+            // Weather Description
+            weatherDescription: {
+                type: String,
+                required: true
+            },
             // Min Temperature
             minTemperature: {
                 type: Number,
@@ -28,16 +33,31 @@ const postShema = mongoose.Schema(
                 type: Number,
                 required: true
             },
+            // Temperature
+            temperature: {
+                type: Number,
+                required: true
+            },
             // Wind Speed
             windSpeed: {
+                type: Number,
+                required: true
+            },
+            // Weather Indice UV
+            weatherIndiceUV: {
+                type: Number,
+                required: true
+            },
+            // Weather Pressure
+            weatherPressure: {
                 type: Number,
                 required: true
             },
         }
     ],
     {
-        timestamps: true
+        timestamps: true,
     }
 );
-
-module.exports = mongoose.model('Post', postShema);
+const Post = mongoose.model('Post', postShema);
+module.exports = Post;

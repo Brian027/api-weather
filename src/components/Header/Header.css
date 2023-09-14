@@ -1,0 +1,86 @@
+/* HEADER GLOBAL */
+
+.headerContainer {
+    max-width: 1300px;
+    margin: 2rem auto;
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap: 2rem;
+}
+
+/* Header left */
+
+.headerContainer .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.headerContainer .left .introHome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.headerContainer .left .introHome .titleHome {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #151515;
+}
+
+.headerContainer .left .introHome .textHome {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #333;
+}
+
+.headerContainer .left .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.headerContainer .left .about .infoAbout .titleAbout {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #151515;
+}
+
+.headerContainer .left .about .infoAbout .textAbout {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #333;
+}
+
+.headerContainer .left .about .btnDoc {
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #151515;
+    color: #fff;
+    font-size: .8rem;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: 'geologica';
+}
+
+.headerContainer .left .about .btnDoc a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Header right */
+
+.headerContainer .right {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+}

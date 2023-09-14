@@ -1,0 +1,31 @@
+.SearchContainer {
+    border-radius: 33px;
+    padding: .25rem .5rem;
+    width: 250px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.SearchContainer input {
+  border: 1px solid #ccc;
+  border-radius: 33px;
+  padding: 5px 10px;
+  font-size: .8rem;
+  outline: none;
+  width: 130px;
+  height: 100%;
+  transition: width 0.4s ease-in-out;
+  font-family: 'geologica';
+}
+
+.SearchContainer input:focus {
+  width: 250px;
+  border-color:#1f1f1f;
+  color: #1f1f1f;
+}
+
+.SearchContainer input:focus::placeholder {
+  color: #1f1f1f;
+}
